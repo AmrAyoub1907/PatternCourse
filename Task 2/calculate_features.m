@@ -5,6 +5,7 @@ function [features] = calculate_features(image_vector)
     N = H * W;
     image_vector = reshape(image_vector, 1, N);
     image_vector = cast(image_vector, 'double');
+   
     % Calculate The Mean
     mean = sum(image_vector) / N;
     features = [features mean];

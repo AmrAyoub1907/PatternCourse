@@ -37,4 +37,4 @@ for filename in os.listdir('./faces_resized') :
             x, y, w, h = [ v for v in f ]
 
             sub_face = cur_image[y:y+h, x:x+w]
-            cv2.imwrite('./cropped_faces/' + filename + '_cropped' + '.jpg', sub_face)
+            cv2.imwrite('./cropped_faces/' + filename, sub_face)
